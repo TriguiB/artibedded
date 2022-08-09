@@ -17,7 +17,7 @@ const CardJob = () => {
           <div className="icon">
             <PinDropOutlinedIcon />
           </div>
-          <p>aaaaaaa</p>
+          <p>aaaaaaaaaaaa</p>
         </div>
         <div className="item-text">
           <div className="icon">
