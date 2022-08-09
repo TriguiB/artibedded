@@ -1,19 +1,20 @@
 import React from 'react';
 import { CDBFooter, CDBBox, CDBBtn, CDBIcon } from 'cdbreact';
 
+
 const Footer = () => {
   return (
-    <CDBFooter className="shadow">
+    <CDBFooter className="shadow"  >
       <CDBBox
         display="flex"
         justifyContent="around"
         alignItems="center"
         className="mx-auto py-4 flex-wrap"
-        style={{ width: '100%' }}
+        style={{ width: '100%', backgroundColor: "#f5f5f5", position:"sticky", bottom:0, left:0, right:0 }}
       >
         <CDBBox display="flex" alignItems="center">
           <a href="/" className="d-flex align-items-center p-0 text-dark">
-         <big>Artibedded</big>
+         <big style={{color:"#a77bce"}}>Artibedded</big>
            
           </a>
         </CDBBox>

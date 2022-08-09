@@ -42,10 +42,10 @@ const NavBar = () => {
   return (
     
       <div className={`NavBar ${showMenu ? "show-nav" : "hidden-nav"}`}>
-        <div className="Left">
+        <div className="Left" >
           <div>
             <GoTriangleLeft style={{color:"#9e6cc9"}} />
-            <GoTriangleLeft  style={{color:"#9e6cc9", margin:"5px"}}/>
+            <GoTriangleLeft  style={{color:"#9e6cc9", margin:"5px", }}/>
           </div>
           <div>
             <GoTriangleLeft  style={{color:"#9e6cc9"}}/>
@@ -62,6 +62,7 @@ const NavBar = () => {
                 style={({ isActive }) =>
                 isActive ? activePage : undefined
               }
+              
               >
                 {item.name}
               </NavLink>

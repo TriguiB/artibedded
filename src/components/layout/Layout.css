@@ -1,4 +1,29 @@
-.children{
+.layout-container{
    
-   margin-top: 100px;
+  
 }
+.children{
+   margin-top: 10%;
+  }
+.footer{
+   position:sticky;
+    bottom:0;
+    
+    left:0; right:0;
+}
+@media screen and (max-width: 768px) {
+  .layout-container{
+   
+  
+  }
+  .children{
+   margin-top: 20%;
+  }
+  .footer{
+   position:sticky;
+    bottom:0;
+    
+    left:0; right:0;
+}
+}
+   
