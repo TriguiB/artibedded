@@ -2,20 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-   
-  
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-   
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -27,12 +26,27 @@
     -->
     <title>Artibedded</title>
     <style>
-      *{
-        font-family: 'Urbanist', sans-serif;
-        margin:0;
-       
-       
-  
+      * {
+        margin: 0;
+        scroll-behavior: smooth;
+
+        scrollbar-width: auto;
+        scrollbar-color: #8f54a0 #ffffff;
+      }
+
+      /* Chrome, Edge, and Safari */
+      *::-webkit-scrollbar {
+        width: 7px;
+      }
+
+      *::-webkit-scrollbar-track {
+        background: #ffffff;
+      }
+
+      *::-webkit-scrollbar-thumb {
+        background-color: #8f54a0;
+        border-radius: 10px;
+        border: 1px solid #ffffff;
       }
     </style>
   </head>

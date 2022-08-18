@@ -1,4 +1,4 @@
-.layout-container{
+/* .layout-container{
    
   
 }
@@ -19,11 +19,8 @@
   .children{
    margin-top: 20%;
   }
-  .footer{
-   position:sticky;
-    bottom:0;
-    
-    left:0; right:0;
+ 
+} */
+.height-between-navbar{
+    height: 10vh;
 }
-}
-   

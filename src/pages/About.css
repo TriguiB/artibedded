@@ -1,0 +1,70 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+}
+.about-header {
+  display: flex;
+}
+
+.text-left-about {
+  color: #013d78;
+
+  text-align: center;
+  opacity: 0.9;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.title-about {
+  font-size: 2rem;
+  font-weight: 600;
+
+  border-bottom: 1px solid #013d78;
+}
+.text-description-about {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: monospace;
+}
+.text-left-about h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.left-about-header {
+  background: url("../assets/left-header-about.svg");
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 90vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 6%;
+  justify-content: center;
+}
+.right-about-header {
+  display: flex;
+
+  background: url("../assets/headerAbout.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 90vh;
+  width: 50%;
+}
+@media screen and (max-width: 920px) {
+  .about-header {
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+  .left-about-header {
+    width: 100vw;
+    height: 50vh;
+  }
+  .right-about-header {
+    width: 100vw;
+    height: 50vh;
+  }
+}

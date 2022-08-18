@@ -9,22 +9,11 @@ import Artboard1 from "../../assets/Artboard1.svg";
 import {Box} from "@mui/system";
 
 const CardService = ({service, index}) => {
-  console.log(index)
-  const [width, setWindowWidth] = useState(0);
-  console.log(width);
-  useEffect(() => {
-    updateDimensions();
-
-    window.addEventListener("resize", updateDimensions);
-    return () => window.removeEventListener("resize", updateDimensions);
-  }, []);
-  const updateDimensions = () => {
-    const width = window.innerWidth;
-    setWindowWidth(width);
-  };
+ 
+  
   return (
     <div className={` ${index%2  ==0 ? "container-card-service-white" : "container-card-service-violet"}`}>
-      <Grid container  className="wrapper-service">
+      <Grid container className="wrapper-service">
         
         <Grid item xs={12} md={8} className="text">
           <div >
@@ -35,11 +24,12 @@ const CardService = ({service, index}) => {
               {service.description}
             </div>
           </div>
+         
         </Grid>
-
         <Grid item xs={12} md={4}>
           <img src={service.image}  className="img-fluid" alt="Responsive image" />
         </Grid>
+       
       </Grid>
     </div>
   );

@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Jobs from "./pages/Jobs";
 import Service from "./pages/Service";
 import Layout from "./components/layout/Layout";
+import JobInfo from "./pages/JobInfo";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/career" element={<Jobs/>} />
         <Route path="/services" element={<Service/>} />
+        <Route path="/jobInfo/:id" element={<JobInfo/>} />
       </Routes>
     </Layout>
    

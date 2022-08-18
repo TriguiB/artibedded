@@ -1,6 +1,7 @@
 import React from "react";
 import Particles from "react-tsparticles";
 import {loadFull} from "tsparticles";
+import Footer from "../components/layout/Footer";
 import './Home.css';
 const Home = () => {
   const particlesInit = async (main) => {
@@ -124,6 +125,7 @@ const Home = () => {
           retina_detect: true,
         }}
       />
+      <Footer className="footer"/>
     </div>
   );
 };

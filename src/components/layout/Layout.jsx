@@ -1,21 +1,19 @@
 import React from 'react'
 import NavBar from './NavBar'
 import './Layout.css'
-import Footer from './Footer'
+
 const Layout = ({children}) => {
   return (
     <div  >
-        <div className="app-bar">
+        <div  style={{position:'sticky',top:0, left:0, right:0,zIndex:10}}>
          <NavBar/>
         </div>
 
         <div className='children'>
-           
+           <div className='height-between-navbar'></div>
             {children}
         </div>
-        <div >
-          <Footer/>
-        </div>
+      
         </div> 
   )
 }

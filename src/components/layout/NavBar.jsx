@@ -80,9 +80,9 @@ const NavBar = () => {
           </div>
         </div>
         <div className="hamburger "  onClick={handleShowMenu}>
-            <span className="line1"> </span>
-            <span className="line2"> </span>
-            <span className="line3"> </span>
+            <div className="line1"> </div>
+            <div className="line2"> </div>
+            <div className="line3"> </div>
       </div>
       </div>
     

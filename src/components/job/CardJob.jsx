@@ -6,42 +6,41 @@ import ArticleOutlinedIcon from "@mui/icons-material/ArticleOutlined";
 import WorkOutlineOutlinedIcon from "@mui/icons-material/WorkOutlineOutlined";
 import WorkspacePremiumOutlinedIcon from "@mui/icons-material/WorkspacePremiumOutlined";
 import PinDropOutlinedIcon from "@mui/icons-material/PinDropOutlined";
-const CardJob = () => {
+import {Link} from "react-router-dom";
+const CardJob = ({job}) => {
   return (
-    <div className="cardJob">
-      <div className="header">
-        <p>Poste #2 : Ingénieur de qualité (Web / Mobile) </p>
-      </div>
-      <div className="icons-job">
-        <div className="item-text">
-          <div className="icon">
-            <PinDropOutlinedIcon />
-          </div>
-          <p>aaaaaaaaaaaa</p>
-        </div>
-        <div className="item-text">
-          <div className="icon">
-            <ArticleOutlinedIcon />
-          </div>
-          <p>aaaaaaaaaa</p>
-        </div>
-        <div className="item-text">
-          <div className="icon">
-            <WorkOutlineOutlinedIcon />
-          </div>
-          <p>aaaaaaaaaa</p>
-        </div>
-        <div className="item-text">
-          <div className="icon">
-            <WorkspacePremiumOutlinedIcon />
-          </div>
-          <p>CIVP/CDD/CDI</p>
-        </div>
-      </div>
-      <div className="button-post">
-        <a className="item-post-button" >Postuler</a>
-      </div>
-    </div>
+    <Grid container flexDirection="column"  justifyContent="space-around" className="container-card-job">
+      <Grid item md={12} xs={12} className="title-job">
+        {job.title}
+      </Grid>
+      <Grid item container md={12} xs={12} >
+        <Grid item md={3} xs={6}   >
+        <p >
+          <PinDropOutlinedIcon />
+         {job.location}</p> 
+        </Grid>
+        <Grid item md={3} xs={6}  >
+        <p> <ArticleOutlinedIcon />
+          {job.type}</p>
+        </Grid>
+        <Grid item md={3} xs={6} >
+        <p><WorkOutlineOutlinedIcon />
+          {job.experience}</p>
+        </Grid>
+        <Grid item md={3} xs={6} >
+          <p>
+          <WorkspacePremiumOutlinedIcon />
+          {job.degree}</p>
+        </Grid>
+      </Grid>
+      <Grid item md={12} xs={12}>
+      <Link to={`/jobInfo/${job._id}`}>
+        <Button style={{backgroundColor: "#a77bce"}} variant="contained">
+          Show more
+        </Button>
+      </Link>
+      </Grid>
+    </Grid>
   );
 };
 
