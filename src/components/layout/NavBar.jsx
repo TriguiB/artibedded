@@ -1,9 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {GoTriangleRight, GoTriangleLeft} from "react-icons/go";
 import {NavLink} from "react-router-dom";
 import "./NavBar.css";
 const NavBar = () => {
+  const [colorBackground, setColorBackground] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  useEffect(() => {
+    window.addEventListener('scroll',  () => {
+      if (window.scrollY > 50) {
+        setColorBackground(true);
+      } else {
+        setColorBackground(false);
+      }
+    });
+  },[window.scrollY]);
+
   let activePage = {
     color: "white",
     backgroundColor: "#a77bce",
@@ -39,9 +50,11 @@ const NavBar = () => {
       id: "contact",
     },
   ];
+
+  
   return (
     
-      <div className={`NavBar ${showMenu ? "show-nav" : "hidden-nav"}`}>
+      <div className={`NavBar ${showMenu ? "show-nav" : "hidden-nav"} ${colorBackground ? "bg-color-navbar" : ""}`}>
         <div className="Left" >
           <div>
             <GoTriangleLeft style={{color:"#9e6cc9"}} />
@@ -85,7 +98,7 @@ const NavBar = () => {
             <div className="line3"> </div>
       </div>
       </div>
-    
+     
   );
 };
 

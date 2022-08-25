@@ -20,22 +20,36 @@ const Jobs = () => {
       });
   }, []);
   return (
-    <div style={{minHeight:"100vh", display:"flex", flexDirection:"column", justifyContent:"space-between"}}>
-      
-        
-     
-      <Grid container spacing={5} style={{justifyContent: "center", marginBottom:"5%", marginTop:"3%"}}>
-      <video autoPlay loop muted>
-          <source src={Video} type="video/mp4" />
-        </video>
+    <div
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        backgroundColor:"#f8f0f4"
+      }}
+    >
+      <div className="header-jobs">
+        <div className="left-header-jobs">aaaaaaaaaaaaaaaaaaaaaaa</div>
+        <div className="right-header-jobs">
+         
+        </div>
+      </div>
+
+      <Grid
+        container
+        spacing={5}
+        style={{justifyContent: "center", marginBottom: "5%"}}
+      >
         {data.map((job) => (
           <Grid item md={5} xs={12} textAlign="center">
             <CardJob key={job._id} job={job} />
           </Grid>
         ))}
       </Grid>
-      <div style={{position:'relative', bottom:"0", right:"0", left:"0"}}><Footer/></div>
-      
+      <div style={{position: "relative", bottom: "0", right: "0", left: "0"}}>
+        <Footer />
+      </div>
     </div>
   );
 };

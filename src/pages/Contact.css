@@ -3,6 +3,8 @@
     background-color: whitesmoke;
     box-shadow: 10px 5px 5px rgb(201, 187, 201);
     border-radius: 10px;
+    display: flex;
+   
 }
 .form{
     font-family: 'Montserrat', sans-serif;
@@ -10,32 +12,4 @@
     box-shadow: 10px 5px 5px rgb(201, 187, 201);
     border-radius: 10px;
 }
-.App{
-    display: flex;
-}
 
-.item-post-button {
-    padding: 15px;
-    text-decoration: none;
-    border: 1px solid #a77bce;
-    font-family: "Urbanist", sans-serif;
-    font-size: 100%;
-    font-weight: bold;
-    color: #a77bce;
-    border-radius: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    transition: 0.6s;
-}
-.item-post-button:hover {
-    color: white;
-    background-color: #a77bce ;
-}
-@media screen and (max-width: 768px) {
-    .item-post-button {
-        font-size: 80%;
-    }
-}
-    

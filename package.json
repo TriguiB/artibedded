@@ -23,8 +23,10 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-tsparticles": "^2.1.4",
+    "simple-react-google-maps": "^1.1.2",
     "sweetalert2": "^11.4.26",
     "tsparticles": "^2.1.4",
+    "typewriter-effect": "^2.19.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

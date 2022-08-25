@@ -6,11 +6,15 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: white;
+  background-color: transparent;
   height: 10%;
   align-items: center;
-  
+  z-index: 10;
 
+}
+.bg-color-navbar{
+  background-color: whitesmoke;
+ transition: ease-in-out 0.5s;
 }
 .Left {
   display: flex;
@@ -42,8 +46,8 @@
 }
 .item:hover {
   color: #a77bce;
-  background-color: #f5f5f5;
-  border-radius: 10%;
+  transition: all 0.3s ease-in-out;
+  
   
 }
 .center {
